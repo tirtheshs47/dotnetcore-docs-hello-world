@@ -24,6 +24,10 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
+      - name: Display
+        run: tree
+      
+      
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
